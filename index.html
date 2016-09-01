@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tuusulan Allasapu Oy">
+    <meta name="author" content="Ilari Nieminen">
+    <!--<link rel="icon" href="../../favicon.ico">-->
+    <title>Tuusulan Allasapu Oy</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet"> </head>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
+<body ng-app="AllasApp">
+    <!-- NAVIGOINTIPALKKI -->
+    <nav class="navbar navbar-default navbar-fixed-top nav-menu">
+        <div class="navbar-header"> <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>            <a class="navbar-brand hidden-sm hidden-md hidden-lg" href="#">Tuusulan Allasapu Oy</a> </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="#/palvelut" ng-class="{active: $route.current.activelink == 'services'}">Palvelut</a></li>
+                <li><a href="#/yhteystiedot" ng-class="{active: $route.current.activelink == 'contact'}">Yhteystiedot</a></li>
+                <li><a href="#" class="navbar-brand hidden-xs">Tuusulan Allasapu Oy</a></li>
+                <li><a href="#/galleria" ng-class="{active: $route.current.activelink == 'gallery'}">Galleria</a></li>
+                <li><a href="#/suositukset" ng-class="{active: $route.current.activelink == 'references'}">Suositukset</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- SISÄLTÖ -->
+    <div class="container container-fluid content">
+            <div ng-view></div>
+    </div>
+    <!-- ALAPALKKI -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12 col-centered footer-text">
+                    <p><b>Copyright © Tuusulan Allasapu Oy 2016   Puh. +358 45 231 0995 Y-tunnus 2407012-6</b></p>
+                    <hr> </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-3"> <img class="img-responsive" src="img/logo/logo1.gif"> </div>
+                <div class="col-md-3 col-sm-3 col-xs-3"> <img class="img-responsive" src="img/logo/logo2.gif"> </div>
+                <div class="col-md-3 col-sm-3 col-xs-3"> <img class="img-responsive" src="img/logo/logo3.gif"> </div>
+                <div class="col-md-3 col-sm-3 col-xs-3"> <img class="img-responsive" src="img/logo/logo4.gif"> </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-3"> <img class="img-responsive" src="img/logo/logo5.png"> </div>
+                <div class="col-md-3 col-sm-3 col-xs-3"> <img class="img-responsive" src="img/logo/logo6.png"> </div>
+                <div class="col-md-3 col-sm-3 col-xs-3"> <img class="img-responsive" src="img/logo/logo7.gif"> </div>
+            </div>
+        </div>
+    </footer>
+    <!-- SCRIPTAT JA KIRJASTOT -->
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="http://cdn.jsdelivr.net/jquery.xgallerify/latest/jquery.xgallerify.min.js"></script>
+
+
+
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <!-- angular-xGallerify -->
+    <script src="http://cdn.jsdelivr.net/angular.xgallerify/latest/angular-xgallerify.min.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
