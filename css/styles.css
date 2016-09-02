@@ -77,8 +77,11 @@ body {
   margin: 0 auto;
   float: none;
 }
+.gallery {
+  text-align: center;
+}
 
 .img-container {
-  float:left;
+  display: inline-block;
   margin: 10px;
 }
