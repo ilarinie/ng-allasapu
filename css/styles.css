@@ -77,3 +77,8 @@ body {
   margin: 0 auto;
   float: none;
 }
+
+.img-container {
+  float:left;
+  border: 10px solid white;
+}
