@@ -1,4 +1,4 @@
-var app = angular.module('AllasApp', ['ngRoute']);
+var app = angular.module('AllasApp', ['ngRoute', 'ngAnimate']);
 
 
 app.config(function($routeProvider) {
@@ -43,43 +43,4 @@ app.controller('AllasController', function($scope, $route) {
             $(this).collapse('hide');
         }
     });
-});
-
-
-
-
-$("#frontpagelink").click(function() {
-    $("#frontpage").show();
-    $("#gallery").hide();
-    $("#services").hide();
-    $("#contacts").hide();
-    $("#references").hide();
-});
-$("#gallerylink").click(function() {
-    $("#frontpage").hide();
-    $("#gallery").show();
-    $("#services").hide();
-    $("#contacts").hide();
-    $("#references").hide();
-});
-$("#servicelink").click(function() {
-    $("#frontpage").hide();
-    $("#gallery").hide();
-    $("#services").show();
-    $("#contacts").hide();
-    $("#references").hide();
-});
-$("#contactslink").click(function() {
-    $("#frontpage").hide();
-    $("#gallery").hide();
-    $("#services").hide();
-    $("#contacts").show();
-    $("#references").hide();
-});
-$("#referenceslink").click(function() {
-    $("#frontpage").hide();
-    $("#gallery").hide();
-    $("#services").hide();
-    $("#contacts").hide();
-    $("#references").show();
 });
