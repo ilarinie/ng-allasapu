@@ -79,9 +79,14 @@ body {
 }
 .gallery {
   text-align: center;
+  margin: 0 auto;
+  float:none;
 }
 
 .img-container {
   display: inline-block;
   margin: 10px;
+}
+.border {
+  border: 1px solid white;
 }
