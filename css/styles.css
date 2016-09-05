@@ -61,7 +61,7 @@ body {
   text-align: left;
 }
 .footer {
-  padding-top: 20px
+  padding-top: 20px;
   border-top: 1px solid black;
   color: black;
   background-color: rgba(255,255,255,0.8);
@@ -76,4 +76,7 @@ body {
 .content-img {
   margin: 0 auto;
   float: none;
+}
+.thumb {
+    margin-bottom: 30px;
 }
