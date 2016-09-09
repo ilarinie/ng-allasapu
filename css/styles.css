@@ -1,41 +1,19 @@
 body {
   font-family: 'Ubuntu', sans-serif;
   padding-top: 50px;
-  background-image: url("../img/bg7.jpg");
-  background-position: center top;
-  color: white;
-}
-.navbar-nav a:hover{
-  color:black;
+  /*background-image: url("../img/bg7.jpg");
+  background-position: center top;*/
+  color: black;
 }
 .col-centered{
   margin: 0 auto;
   float: none;
 }
-.navbar .navbar-nav {
-  display: inline-block !important;
-  float: none !important;
-  vertical-align: top !important;
-}
-.navbar-header {
-  margin: 0 auto;
-  float:none;
-}
-.navbar-brand {
-  font-size: 150%;
-}
-
-.navbar .navbar-collapse {
-  text-align: center !important;
-}
-.nav-menu {
-  text-align: center;
-}
 .content {
   padding-top: 30px;
   width: 100vw;
   text-align: center;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.1);
   padding-bottom: 40px;
   min-height:75vh;
 }
@@ -43,21 +21,9 @@ body {
   margin-top: -50px;
   border: none;
   background-color: rgba(0,0,0,0);
+  color: rgb(0,0,51);
 }
-.navbar a {
-  font-family: 'Ubuntu', sans-serif;
-  color:white !important;
-}
-.active {
-  color: red;
-}
-.navbar {
 
-  background-color: rgba(0,0,0,0.8);
-   margin-bottom: 0 !important;
-   border-color: black;
-
-}
 .services {
   text-align: left;
 }
@@ -124,4 +90,45 @@ body {
 
 .introduction {
   min-height: 75px;
+}
+
+
+
+//NAVBAR
+.navbar-nav a:hover{
+  color:black;
+}
+
+.navbar .navbar-nav {
+  display: inline-block !important;
+  float: none !important;
+  vertical-align: top !important;
+}
+.navbar-header {
+  margin: 0 auto;
+  float:none;
+}
+.navbar-brand {
+  font-size: 150%;
+}
+
+.navbar .navbar-collapse {
+  text-align: center !important;
+}
+.nav-menu {
+  text-align: center;
+}
+.navbar a {
+  font-family: 'Ubuntu', sans-serif;
+  color:white !important;
+}
+.active {
+  color: red;
+}
+.navbar {
+
+  background-color: rgba(0,0,51,0.8);
+   margin-bottom: 0 !important;
+   border-color: black;
+
 }
