@@ -1,7 +1,11 @@
 <div class="col-sm-7 col-md-7 col-centered">
 <div class="jumbotron">
     <h1>Tuusulan Allasapu</h1>
-    <p>Tuusulan Allasapu tarjoaa täyden palvelun asennus-, huolto-, saneeraus- ja suunnittelupalveluita kaikenlaisiin uima-altaisiin</p>
+    <div class="introduction" ng-switch="introduction">
+        <div class="introduction-msg" ng-switch-when="1">Tuusulan Allasapu tarjoaa täyden palvelun asennus-, huolto-, saneeraus- ja suunnittelupalveluita kaikenlaisiin uima-altaisiin</div>
+        <div class="introduction-msg" ng-switch-when="2">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</div>
+        <div class="introduction-msg" ng-switch-when="3">There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain...</div>
+    </div>
 </div>
 <p>Tuusulan Allasapu Oy on pääasiassa pääkaupunkiseudulla toimiva uima-allas -alan yritys, jonka periaatteena on tarjota laadukkaita ja kestäviä ratkaisuja.</p>
 <hr>
@@ -10,7 +14,19 @@
 <p>Toimintamme kattaa sekä allas-asennukset että huollot ja korjaukset. Asennamme ja huollamme mm uima-altaat, porealtaat ja -ammeet, vesihierontalaitteet ja vesiaiheet sekä yksityiseen että julkiseen käyttöön. Palveluihimme kuuluvat huoltosopimukset, kausihuollot
     ja määräaikaishuollot. </p>
 <hr>
-<div class="row"> <img class="img-responsive content-img" src="img/9.jpg"> </div>
+<div class="row">
+    <div class="content-img-container" ng-switch="introduction">
+        <div class="introduction-msg" ng-switch-when="1">
+            <img class="img-responsive content-img" src="img/gallery/9.jpg">
+        </div>
+        <div class="introduction-msg" ng-switch-when="2">
+            <img class="img-responsive content-img" src="img/gallery/8.jpg">
+        </div>
+        <div class="introduction-msg" ng-switch-when="3">
+            <img class="img-responsive content-img" src="img/gallery/11.jpg">
+        </div>
+    </div>
+</div>
 <hr>
 <p>Tarjoamme myös laajan valikoiman erilaisia allastarvikkeita kuten allaskemikaalit, pumput, suodattimet, automaattikemikaalilaitteet, lämmittimet, UV-laitteet, allasvalaisimet ja -portaat sekä uima-allaspeitteet. </p>
 <hr>

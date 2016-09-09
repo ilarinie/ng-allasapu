@@ -1,6 +1,10 @@
 var app = angular.module('AllasApp', ['ngRoute', 'ngAnimate']);
 
 
+
+
+
+
 app.config(function($routeProvider) {
     $routeProvider
         .when('/', {
@@ -34,8 +38,9 @@ app.config(function($routeProvider) {
         });
 });
 
-app.controller('AllasController', function($scope, $route) {
+app.controller('AllasController', function($scope, $route, $interval) {
     $scope.$route = $route;
+    $scope.introduction = 1;
 
     //suljetaan valikko kun linkkiä klikattu
     $(document).on('click', '.navbar-collapse.in', function(e) {
@@ -43,4 +48,16 @@ app.controller('AllasController', function($scope, $route) {
             $(this).collapse('hide');
         }
     });
+
+    $interval(function(){
+        if ($scope.introduction < 3){
+            $scope.introduction++;
+        }else {
+            $scope.introduction = 1;
+        }
+    }, 4000);
+
+
+
+
 });
