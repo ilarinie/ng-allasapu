@@ -4,7 +4,6 @@ var app = angular.module('AllasApp', ['ngRoute', 'ngAnimate']);
 
 
 
-
 app.config(function($routeProvider) {
     $routeProvider
         .when('/', {
@@ -52,23 +51,48 @@ app.controller('AllasController', function($scope, $route, $interval) {
         }
     });
 
-    $interval(function(){
-        if ($scope.introduction < 3){
+    $interval(function() {
+        if ($scope.introduction < 3) {
             $scope.introduction++;
-        }else {
+        } else {
             $scope.introduction = 1;
         }
     }, 7000);
 
-    $interval(function(){
-        if ($scope.reference < 3){
+    $interval(function() {
+        if ($scope.reference < 3) {
             $scope.reference++;
-        }else {
+        } else {
             $scope.reference = 1;
         }
     }, 4000);
 
 
+    function scrollToAnchor(aid) {
+        var aTag = $("a[name='" + aid + "']");
+        $('html,body').animate({
+            scrollTop: aTag.offset().top
+        }, 'slow');
+    }
 
+    $scope.scroll = (function(id) {
+        switch (id) {
+            case 1:
+                scrollToAnchor("anchor1");
+                break;
+            case 2:
+                scrollToAnchor("anchor2");
+                break;
+            case 3:
+                scrollToAnchor("anchor3");
+                break;
+            case 4:
+                scrollToAnchor("anchor4");
+                break;
+            default:
+                break;
+        }
+
+    });
 
 });
