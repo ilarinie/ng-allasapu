@@ -38,9 +38,12 @@ app.config(function($routeProvider) {
         });
 });
 
+
+
 app.controller('AllasController', function($scope, $route, $interval) {
     $scope.$route = $route;
     $scope.introduction = 1;
+    $scope.reference = 1;
 
     //suljetaan valikko kun linkkiä klikattu
     $(document).on('click', '.navbar-collapse.in', function(e) {
@@ -56,6 +59,14 @@ app.controller('AllasController', function($scope, $route, $interval) {
             $scope.introduction = 1;
         }
     }, 7000);
+
+    $interval(function(){
+        if ($scope.reference < 3){
+            $scope.reference++;
+        }else {
+            $scope.reference = 1;
+        }
+    }, 4000);
 
 
 
