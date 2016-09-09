@@ -55,7 +55,7 @@ app.controller('AllasController', function($scope, $route, $interval) {
         }else {
             $scope.introduction = 1;
         }
-    }, 4000);
+    }, 7000);
 
 
 
