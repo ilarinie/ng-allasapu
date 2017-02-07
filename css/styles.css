@@ -55,3 +55,22 @@ body {
 .otsikko {
     color: #ffe;
 }
+
+.page-view {}
+
+.content.ng-enter {
+    animation: 0.5s sivun_vaihto;
+}
+
+.content.ng-leave {
+    opacity: 0;
+}
+
+@keyframes sivun_vaihto {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

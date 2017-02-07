@@ -1,4 +1,4 @@
-var app = angular.module('app', ['ngRoute']);
+var app = angular.module('app', ['ngRoute', 'ngAnimate']);
 
 
 app.config(function($routeProvider) {
@@ -16,3 +16,8 @@ app.config(function($routeProvider) {
             templateUrl: 'views/suositukset.html'
         })
 });
+
+
+lightbox.option({
+    'albumLabel': "Kuva %1 / %2"
+})
