@@ -1,0 +1,35 @@
+@media screen and (max-width: 1000px) {
+    .references {
+        width: 90%;
+        margin: 20px auto;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .references {
+        width: 600px;
+        margin: 20px auto;
+    }
+}
+
+.references {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.reference-item {
+    display: flex;
+}
+
+.item {
+    margin: 10px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    color: grey;
+    background-color: grey;
+    width: 100%;
+}
