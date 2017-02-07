@@ -2,7 +2,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #074E68;
+    background: #074E68;
+    background: linear-gradient(to left, #074E68, rgba(7, 78, 104, 0.6));
     color: #ffe;
 }
 
