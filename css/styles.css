@@ -18,7 +18,7 @@ body {
 .header {
     text-align: center;
     background: #074E68;
-    background: linear-gradient(to left, #074E68, rgba(7, 78, 104, 0.7));
+    background: linear-gradient(rgba(7, 78, 104, 0.7), #074E68);
     background-size: cover;
     position: relative;
     overflow: visible;
@@ -28,7 +28,7 @@ body {
 
 .nav {
     background: #074E68;
-    background: linear-gradient(to left, #074E68, rgba(7, 78, 104, 0.7));
+    /*background: linear-gradient(rgba(7, 78, 104, 0.7), #074E68);*/
     background-size: cover;
     width: 100%;
     margin: 0;

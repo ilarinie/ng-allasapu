@@ -3,7 +3,7 @@
     flex-wrap: wrap;
     justify-content: center;
     background: #074E68;
-    background: linear-gradient(to left, #074E68, rgba(7, 78, 104, 0.6));
+    background: linear-gradient(rgba(7, 78, 104, 0.6), #074E68);
     color: #ffe;
 }
 
