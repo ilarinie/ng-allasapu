@@ -1,0 +1,62 @@
+.etusivu-content1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #074E68;
+    color: #ffe;
+}
+
+.etusivu-content2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #ffe;
+    color: black;
+}
+
+.content-item {
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+}
+
+.content-item-item {
+    width: 30%;
+    margin: 30px;
+}
+
+.ikoni {
+    color: darkorange;
+}
+
+.introduction {
+    text-align: center;
+    font-size: 30px;
+    width: 80%;
+    margin: 50px auto;
+}
+
+.services {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    text-align: center;
+    padding: 10px;
+}
+
+@media screen and (min-width: 1080px) {
+    .service-item {
+        width: 22%;
+    }
+}
+
+@media screen and (max-width: 1079px) {
+    .service-item {
+        width: 45%;
+    }
+}
