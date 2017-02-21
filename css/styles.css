@@ -56,8 +56,6 @@ body {
     color: #ffe;
 }
 
-.page-view {}
-
 .content.ng-enter {
     animation: 0.5s sivun_vaihto;
 }
